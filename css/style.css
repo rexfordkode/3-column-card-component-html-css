@@ -1,0 +1,118 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+/* VARIABLES */
+:root{
+  /* Background, Botton Text Colors */
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  /* Paragraph, Button, Heading Colors */
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+/* Reset */
+html, body{
+  background-color: var(--very-light-gray);
+  box-sizing: border-box;
+  color: var(--transparent-white);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+}
+
+footer, header, nav, section {
+  display: block;
+}
+
+h2{
+  color: var(--very-light-gray);
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 88px auto;
+}
+
+.card1, .card2, .card3{
+  padding: 48px;
+}
+
+.card1{
+  background-color: var(--bright-orange);
+  border-radius: 10px 10px 0 0;
+}
+
+.card2{
+  background-color: var(--dark-cyan);
+}
+
+.card3{
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 0 10px 10px;
+}
+
+.card_button{
+  padding: 18px 32px;
+  border: 3px solid transparent;
+  border-radius: 50px;
+}
+
+#sedan_button{
+  color: var(--bright-orange);
+}
+#suv_button{
+  color: var(--dark-cyan);
+}
+#luxury_button{
+  color: var(--very-dark-cyan);
+}
+
+#sedan_button:hover, #suv_button:hover, #luxury_button:hover{
+  color: var(--very-light-gray)
+  cursor: pointer;
+  background-color: transparent;
+  border: 3px solid var(--very-light-gray);
+  transition: all 0.3s ease-in-out;
+}
+
+.attribution { 
+  color: #000;
+  font-size: 11px; 
+  text-align: center;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media (min-width: 880px){
+  .card-container{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 171px auto;
+    max-width: 917px;
+    min-height: 500px;
+  }
+  p{
+    margin-bottom: 88px;
+  }
+  .card1{
+  background-color: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.card3{
+  background-color: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+}
